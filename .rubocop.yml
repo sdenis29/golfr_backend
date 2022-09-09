@@ -18,7 +18,7 @@ Layout/SpaceInsideArrayLiteralBrackets:
 Style/DoubleNegation:
   Enabled: false
 Layout/FirstArrayElementIndentation:
-  EnforcedStyle: 'consistent'
+  EnforcedStyle: "consistent"
 Bundler/OrderedGems:
   Enabled: false
 Style/TrailingCommaInHashLiteral:
@@ -31,46 +31,46 @@ Layout/LineLength:
   Max: 100
   IgnoredPatterns: ['(\A|\s)#']
   Exclude:
-    - 'db/**/*.rb'
+    - "db/**/*.rb"
 Metrics/MethodLength:
   Max: 40
   Exclude:
-    - 'db/data/**/*'
+    - "db/data/**/*"
 Metrics/BlockLength:
   Exclude:
-    - 'spec/**/*.rb'
-    - 'db/*.rb'
-    - 'config/**/*.rb'
+    - "spec/**/*.rb"
+    - "db/*.rb"
+    - "config/**/*.rb"
 Metrics/AbcSize:
   Exclude:
-    - 'db/migrate/*'
-    - 'db/data/**/*'
-    - 'spec/test_helpers.rb'
+    - "db/migrate/*"
+    - "db/data/**/*"
+    - "spec/test_helpers.rb"
 Metrics/ClassLength:
   Max: 150
   Exclude:
-    - 'db/data/**/*'
+    - "db/data/**/*"
 Metrics/ModuleLength:
   Max: 150
 Style/Documentation:
   Exclude:
-    - 'db/migrate/*'
-    - 'db/data/**/*'
-    - 'spec/**/*'
+    - "db/migrate/*"
+    - "db/data/**/*"
+    - "spec/**/*"
 Style/ClassAndModuleChildren:
   Exclude:
-    - 'spec/**/**/*'
+    - "spec/**/**/*"
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: compact
 Lint/ParenthesesAsGroupedExpression:
   Exclude:
-    - 'spec/**/**/*'
+    - "spec/**/**/*"
 Style/SymbolArray:
   Exclude:
-    - 'db/migrate/*'
-    - 'db/data/**/*'
+    - "db/migrate/*"
+    - "db/data/**/*"
 Metrics/ParameterLists:
   CountKeywordArgs: false
 Layout/EmptyLinesAroundAttributeAccessor:
@@ -172,13 +172,13 @@ Style/RegexpLiteral:
   AllowInnerSlashes: true
 Style/Encoding:
   Exclude:
-    - 'db/data_schema.rb'
+    - "db/data_schema.rb"
 Layout/EmptyLineAfterMagicComment:
   Exclude:
-    - 'db/data_schema.rb'
+    - "db/data_schema.rb"
 Style/NumericLiterals:
   Exclude:
-    - 'db/data_schema.rb'
+    - "db/data_schema.rb"
 GitlabSecurity/DeepMunge:
   Enabled: true
 GitlabSecurity/JsonSerialization:
@@ -195,21 +195,21 @@ GitlabSecurity/PublicSend:
   Enabled: false
 Rails/SkipsModelValidations:
   Exclude:
-    - 'db/data/**/*'
+    - "db/data/**/*"
 Style/GlobalVars:
   AllowedVariables:
     - $BROWSER_CLUSTER
 Metrics/CyclomaticComplexity:
   Exclude:
-    - 'db/data/**/*'
+    - "db/data/**/*"
 Metrics/PerceivedComplexity:
   Exclude:
-    - 'db/data/**/*'
+    - "db/data/**/*"
 Lint/ConstantDefinitionInBlock:
   Enabled: false
 Naming/VariableNumber:
   Enabled: false
-Gemspec/DateAssignment:
+Gemspec/DeprecatedAttributeAssignment:
   Enabled: false
 Layout/LineEndStringConcatenationIndentation:
   Enabled: true
