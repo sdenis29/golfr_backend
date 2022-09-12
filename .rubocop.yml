@@ -209,7 +209,7 @@ Lint/ConstantDefinitionInBlock:
   Enabled: false
 Naming/VariableNumber:
   Enabled: false
-Gemspec/DeprecatedAttributeAssignment:
+Gemspec/OrderedDependencies:
   Enabled: false
 Layout/LineEndStringConcatenationIndentation:
   Enabled: true
