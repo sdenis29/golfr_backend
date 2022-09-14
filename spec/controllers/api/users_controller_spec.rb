@@ -3,7 +3,6 @@ require 'rails_helper'
 describe Api::UsersController, type: :controller do
   before :each do
     @user1 = create(:user, email: 'usertest@email.com', password: 'userpass')
-    # sign_in(@user1, scope: :user)
   end
 
   describe 'POST login' do
@@ -44,6 +43,13 @@ describe Api::UsersController, type: :controller do
       }
 
       expect(response).to have_http_status(:ok)
+      response_hash = JSON.parse(response.body)
+      user = response_hash['user']
+      scores = response_hash['scores']
+
+      expect(user['id']).to eq @user1.id
+      expect(user['email']).to eq @user1.email
+      expect(scores.size).to eq @user1.scores.size
     end
   end
 end
